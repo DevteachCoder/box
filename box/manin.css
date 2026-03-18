@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    /* background-color: red; */
+    border-radius: 0 50% 50% 0;
+    border-right: 10px solid rgb(95, 95, 89);
+    animation:  circle 0.4s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
